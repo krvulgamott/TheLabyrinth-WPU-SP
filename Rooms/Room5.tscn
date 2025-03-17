@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://cy0c04oswdkpc"]
+
+[ext_resource type="PackedScene" uid="uid://7oeqdu22e1q5" path="res://Rooms/Room.tscn" id="1_pgpvn"]
+[ext_resource type="PackedScene" uid="uid://r88elkkvv60o" path="res://Rooms/Furniture and Traps/Door.tscn" id="2_pbu8l"]
+[ext_resource type="PackedScene" uid="uid://dmay3kb4dokgj" path="res://Rooms/Furniture and Traps/Spikes.tscn" id="3_o4nvh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v6fu8"]
+size = Vector2(16, 8)
+
+[node name="Room" instance=ExtResource("1_pgpvn")]
+
+[node name="TileMap" parent="." index="0"]
+layer_0/tile_data = PackedInt32Array(196616, 0, 0, 196617, 0, 0, 196618, 0, 0, 196619, 0, 0, 196620, 18, 0, 196621, 18, 0, 196622, 0, 0, 196623, 0, 0, 196624, 0, 0, 196625, 18, 0, 196626, 22, 0, 196627, 18, 0, 196628, 18, 0, 196629, 22, 0, 262152, 0, 0, 327688, 0, 0, 393224, 0, 0, 458760, 0, 0, 524296, 19, 0, 589832, 22, 0, 655368, 19, 0, 262153, 0, 0, 327689, 0, 0, 393225, 0, 0, 458761, 0, 0, 524297, 20, 0, 589833, 22, 0, 655369, 21, 0, 262154, 0, 0, 327690, 0, 0, 393226, 0, 0, 458762, 0, 0, 524298, 15, 0, 589834, 18, 0, 655370, 21, 0, 262155, 19, 0, 327691, 0, 0, 393227, 0, 0, 458763, 21, 0, 524299, 17, 0, 589835, 20, 0, 655371, 22, 0, 262156, 0, 0, 327692, 20, 0, 393228, 0, 0, 458764, 21, 0, 524300, 15, 0, 589836, 15, 0, 655372, 21, 0, 262157, 0, 0, 327693, 0, 0, 393229, 0, 0, 458765, 21, 0, 524301, 0, 0, 589837, 20, 0, 655373, 22, 0, 262158, 16, 0, 327694, 0, 0, 393230, 20, 0, 458766, 0, 0, 524302, 0, 0, 589838, 15, 0, 655374, 21, 0, 262159, 0, 0, 327695, 0, 0, 393231, 0, 0, 458767, 0, 0, 524303, 0, 0, 589839, 0, 0, 655375, 15, 0, 262160, 0, 0, 327696, 0, 0, 393232, 0, 0, 458768, 0, 0, 524304, 0, 0, 589840, 0, 0, 655376, 0, 0, 262161, 0, 0, 327697, 0, 0, 393233, 0, 0, 458769, 0, 0, 524305, 0, 0, 589841, 0, 0, 655377, 0, 0, 262162, 15, 0, 327698, 0, 0, 393234, 0, 0, 458770, 0, 0, 524306, 0, 0, 589842, 0, 0, 655378, 0, 0, 262163, 22, 0, 327699, 0, 0, 393235, 0, 0, 458771, 0, 0, 524307, 0, 0, 589843, 0, 0, 655379, 0, 0, 262164, 17, 0, 327700, 21, 0, 393236, 15, 0, 458772, 0, 0, 524308, 0, 0, 589844, 0, 0, 655380, 0, 0, 262165, 22, 0, 327701, 0, 0, 393237, 0, 0, 458773, 0, 0, 524309, 0, 0, 589845, 0, 0, 655381, 0, 0, 131080, 2, 0, 131081, 2, 0, 131082, 27, 0, 131083, 2, 0, 131093, 27, 0, 131092, 2, 0, 131091, 2, 0, 131090, 29, 0, 131084, 2, 0, 131089, 28, 0, 131085, 2, 0, 131088, 2, 0, 65558, 8, 0, 65543, 7, 0, 131079, 6, 0, 196615, 6, 0, 262151, 6, 0, 327687, 6, 0, 393223, 6, 0, 458759, 6, 0, 524295, 6, 0, 589831, 6, 0, 655367, 4, 0, 655382, 3, 0, 131094, 5, 0, 196630, 5, 0, 262166, 5, 0, 327702, 5, 0, 393238, 5, 0, 458774, 5, 0, 524310, 5, 0, 589846, 5, 0, 65544, 1, 0, 65545, 1, 0, 65546, 1, 0, 65547, 1, 0, 65548, 1, 0, 65553, 1, 0, 65554, 1, 0, 65555, 1, 0, 65556, 1, 0, 65557, 1, 0, 131086, 0, 0, 65550, 0, 0, 65551, 0, 0, 131087, 0, 0, 65552, 12, 0, 65549, 13, 0)
+
+[node name="TileMap2" parent="." index="1"]
+layer_0/tile_data = PackedInt32Array(655373, 9, 0, 655372, 10, 0, 655371, 10, 0, 655370, 10, 0, 655369, 10, 0, 655368, 10, 0, 655376, 11, 0, 655377, 10, 0, 655378, 10, 0, 655379, 10, 0, 655380, 10, 0, 655381, 10, 0)
+
+[node name="FurnitureTileMap" parent="." index="2"]
+layer_0/tile_data = PackedInt32Array(131084, 34, 0, 131081, 32, 0, 655369, 31, 0, 589833, 31, 0, 262163, 31, 0, 393233, 31, 0, 458769, 31, 0, 524305, 31, 0, 524304, 31, 0, 131092, 30, 0, 327691, 31, 0, 393227, 31, 0, 262155, 31, 0, 262154, 31, 0, 196618, 31, 0, 524303, 31, 0, 524302, 31, 0, 524301, 31, 0, 589837, 31, 0, 655373, 31, 0, 458771, 26, 0, 458772, 25, 0, 262160, 24, 0, 524299, 24, 0)
+
+[node name="Marker2D" type="Marker2D" parent="Entrance" index="0"]
+position = Vector2(232, 168)
+
+[node name="Position2D2" type="Marker2D" parent="Entrance" index="1"]
+position = Vector2(248, 168)
+
+[node name="Door" parent="Doors" index="0" instance=ExtResource("2_pbu8l")]
+position = Vector2(240, 32)
+
+[node name="Marker2D" type="Marker2D" parent="EnemyPositions" index="0"]
+position = Vector2(216, 88)
+
+[node name="Position2D2" type="Marker2D" parent="EnemyPositions" index="1"]
+position = Vector2(312, 120)
+
+[node name="Spikes" parent="Traps" index="0" instance=ExtResource("3_o4nvh")]
+position = Vector2(200, 72)
+
+[node name="Spikes2" parent="Traps" index="1" instance=ExtResource("3_o4nvh")]
+position = Vector2(216, 72)
+
+[node name="Spikes3" parent="Traps" index="2" instance=ExtResource("3_o4nvh")]
+position = Vector2(216, 88)
+
+[node name="Spikes4" parent="Traps" index="3" instance=ExtResource("3_o4nvh")]
+position = Vector2(232, 88)
+
+[node name="Spikes5" parent="Traps" index="4" instance=ExtResource("3_o4nvh")]
+position = Vector2(200, 104)
+
+[node name="Spikes6" parent="Traps" index="5" instance=ExtResource("3_o4nvh")]
+position = Vector2(216, 104)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetector" index="0"]
+position = Vector2(240, 160)
+shape = SubResource("RectangleShape2D_v6fu8")

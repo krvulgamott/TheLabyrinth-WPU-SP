@@ -1,0 +1,130 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtpf7l566b5uk"]
+
+[ext_resource type="Script" path="res://UI/credits.gd" id="1_3t6co"]
+
+[sub_resource type="Theme" id="Theme_2lw7k"]
+default_font_size = 12
+
+[sub_resource type="Theme" id="Theme_vbivg"]
+default_font_size = 10
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_3t6co")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 80.0
+offset_top = 192.0
+offset_right = 143.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Back" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Return
+"
+
+[node name="Credits_MarginContainer2" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.433
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 8.0
+offset_right = 16.16
+offset_bottom = 8.0
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Credits_MarginContainer2"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Credits_MarginContainer2/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+text = "Credits:"
+fit_content = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Credits_MarginContainer2/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme = SubResource("Theme_2lw7k")
+text = "	Original Dungeon Asset Pack created by o_lobster on itch.io
+	Code referenced from Matinator on YouTube
+	Music from PlayOnLoop.com
+---
+	All other code and art and sounds were created by 
+				Keegan Vulgamott"
+fit_content = true
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="Credits_MarginContainer2/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+text = "Slider?"
+fit_content = true
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="Credits_MarginContainer2/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme = SubResource("Theme_vbivg")
+text = "The slider on the start screen allows you to choose how many rooms are in each level of the dungeon."
+fit_content = true
+
+[node name="Controls_MarginContainer3" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.583
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -15.84
+offset_top = 8.0
+offset_right = -16.0
+offset_bottom = 8.0
+grow_horizontal = 0
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Controls_MarginContainer3"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Controls_MarginContainer3/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+text = "Controls:"
+fit_content = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Controls_MarginContainer3/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme = SubResource("Theme_2lw7k")
+text = "Move: W A S D
+
+Attack: Left Click
+
+Charge/Special: Hold Attack
+
+Change Weapons: Scroll Wheel
+"
+fit_content = true
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]
