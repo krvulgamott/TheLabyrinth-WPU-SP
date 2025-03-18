@@ -16,3 +16,4 @@ func reset_data() -> void:
 
 #Below are the generator variables
 @export var num_levels: int = 5
+@export var enemy_multiplier: int = 2
