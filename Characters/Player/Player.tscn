@@ -342,6 +342,7 @@ libraries = {
 [node name="Sword" parent="Weapons" index="0" instance=ExtResource("6")]
 
 [node name="Camera2D" type="Camera2D" parent="." index="5"]
+zoom = Vector2(0.1, 0.1)
 
 [node name="DustPosition" type="Marker2D" parent="." index="6"]
 position = Vector2(0, 6)
